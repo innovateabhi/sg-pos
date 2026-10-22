@@ -1,0 +1,98 @@
+﻿
+Folder PATH listing for volume OS
+Volume serial number is 7251-CC75
+C:.
+|   project-tree.txt
+|   README.md
+|   
++---backend
+|   |   .htaccess
+|   |   Dockerfile
+|   |   index.php
+|   |   
+|   +---api
+|   |       auth.php
+|   |       dashboard.php
+|   |       menu.php
+|   |       orders.php
+|   |       reports.php
+|   |       settings.php
+|   |       staff.php
+|   |       tables.php
+|   |       
+|   +---config
+|   |       database.php
+|   |       
+|   \---middleware
+|           auth.php
+|           response.php
+|           
++---database
+|       infinityfree_schema.sql
+|       infinityfree_seed.sql
+|       schema.sql
+|       seed.sql
+|       
+\---frontend
+    |   .env.example
+    |   .oxlintrc.json
+    |   index.html
+    |   package-lock.json
+    |   package.json
+    |   README.md
+    |   vercel.json
+    |   vite.config.js
+    |   
+    |   |   favicon.svg
+    |   |   icons.svg
+    |   |   index.html
+    |   |   
+    |   \---assets
+    |           index-BUjT0lbK.css
+    |           index-DksRe9VG.js
+    |                   
+    +---public
+    |       favicon.svg
+    |       icons.svg
+    |       
+    \---src
+        |   App.css
+        |   App.jsx
+        |   index.css
+        |   main.jsx
+        |   
+        +---assets
+        |       hero.png
+        |       react.svg
+        |       vite.svg
+        |       
+        +---components
+        |   +---layout
+        |   |       AppLayout.jsx
+        |   |       Navbar.jsx
+        |   |       Sidebar.jsx
+        |   |       
+        |   \---pos
+        |           KotModal.jsx
+        |           ReceiptModal.jsx
+        |           SettleModal.jsx
+        |           
+        +---context
+        |       AuthContext.jsx
+        |       
+        +---pages
+        |       Dashboard.jsx
+        |       Login.jsx
+        |       MenuManagement.jsx
+        |       Orders.jsx
+        |       POS.jsx
+        |       Reports.jsx
+        |       Settings.jsx
+        |       StaffManagement.jsx
+        |       Tables.jsx
+        |       
+        \---services
+                api.js
+                
+
+

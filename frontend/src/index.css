@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-dark: #172033;
+    --primary-accent: #E99A24;
+    --accent-hover: #CF7C12;
+    --bg-main: #F7F7F4;
+    --surface: #FFFFFF;
+    --text-main: #202735;
+    --text-muted: #778091;
+    --border-subtle: #E7E8EC;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom Scrollbar for fast POS browsing */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Thermal Receipt Print Stylesheet (58mm / 80mm POS receipt printers) */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt-printable, #thermal-receipt-printable * {
+    visibility: visible;
+  }
+  #thermal-receipt-printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58mm;
+    margin: 0;
+    padding: 2mm 3mm;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    line-height: 1.25;
+    color: #000;
+    background: #fff;
+  }
+  @page {
+    size: 58mm auto;
+    margin: 0;
+  }
+}
