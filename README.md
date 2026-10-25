@@ -1,18 +1,15 @@
-# Saffron Grill POS & Restaurant Management System
+# POS & Restaurant Management System
 **Prototype by Softrenix Technologies**
-*Location: Near IQ City Medical College, Bijra More, Durgapur, West Bengal 713206*
 
 ---
 
-## 🌟 Overview
-Saffron Grill POS is a modern, responsive, high-speed Restaurant Point of Sale & Operations Management system designed to digitise daily orders, dine-in table tracking, kitchen menu availability, automated GST billing, and thermal receipt printing.
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-saffron-grill-pos/
+sg-pos/
 ├── backend/
 │   ├── api/
 │   │   ├── auth.php              # Login, logout, session check, password update
@@ -66,9 +63,9 @@ saffron-grill-pos/
 
 | Role | Email | Password | Access Level |
 |---|---|---|---|
-| **Owner (Admin)** | `owner@saffrongrill.com` | `admin123` | Full Access (All features, Reports, Staff, Settings) |
-| **Cashier (Staff)** | `cashier@saffrongrill.com` | `staff123` | POS, Billing, Tables, Order History |
-| **Manager** | `manager@saffrongrill.com` | `admin123` | Operations, POS, Menu, Staff, Tables |
+| **Owner (Admin)** | `owner@gmail.com` | `admin123` | Full Access (All features, Reports, Staff, Settings) |
+| **Cashier (Staff)** | `cashier@gmail.com` | `staff123` | POS, Billing, Tables, Order History |
+| **Manager** | `manager@gmail.com` | `admin123` | Operations, POS, Menu, Staff, Tables |
 
 *(Quick 1-click fill buttons are also available on the Login screen).*
 
