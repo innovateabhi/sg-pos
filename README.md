@@ -82,19 +82,19 @@ sg-pos/
    
    *Or via PowerShell terminal:*
    ```powershell
-   cmd /c "C:\xampp\mysql\bin\mysql.exe -u root < c:\xampp\htdocs\saffron-grill-pos\database\schema.sql"
-   cmd /c "C:\xampp\mysql\bin\mysql.exe -u root < c:\xampp\htdocs\saffron-grill-pos\database\seed.sql"
+   cmd /c "C:\xampp\mysql\bin\mysql.exe -u root < c:\xampp\htdocs\sg-pos\database\schema.sql"
+   cmd /c "C:\xampp\mysql\bin\mysql.exe -u root < c:\xampp\htdocs\sg-pos\database\seed.sql"
    ```
 
 ### 2. Verify Backend API
 Open in your browser or run in terminal:
-- `http://localhost/saffron-grill-pos/backend/index.php`
+- `http://localhost/sg-pos/backend/index.php`
 - You should see JSON status: `"status": "healthy", "database_connected": true`
 
 ### 3. Start Frontend Development Server
 In your terminal:
 ```powershell
-cd C:\xampp\htdocs\saffron-grill-pos\frontend
+cd C:\xampp\htdocs\sg-pos\frontend
 npm install
 npm run dev
 ```
